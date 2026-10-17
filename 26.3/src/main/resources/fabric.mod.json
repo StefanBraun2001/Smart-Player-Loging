@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "smartplayerlogger",
+	"version": "${version}",
+	"name": "Smart Player Logger",
+	"description": "Server-side player activity log (joins, leaves, refused connections) and a persistent last-seen history, written to plain text files in P_Logger/.",
+	"authors": [
+		"Stefan Braun"
+	],
+	"contact": {
+		"homepage": "https://github.com/StefanBraun2001/Smart-Player-Loging/blob/main/docs/GUIDE.md",
+		"sources": "https://github.com/StefanBraun2001/Smart-Player-Loging",
+		"issues": "https://github.com/StefanBraun2001/Smart-Player-Loging/issues"
+	},
+	"license": "MIT",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"eu.stefanbraun612.smartplayerlogger.SmartPlayerLogger"
+		]
+	},
+	"mixins": [
+		"smartplayerlogger.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

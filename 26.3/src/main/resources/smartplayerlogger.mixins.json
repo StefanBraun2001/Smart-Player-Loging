@@ -1,0 +1,12 @@
+{
+	"required": false,
+	"minVersion": "0.8",
+	"package": "eu.stefanbraun612.smartplayerlogger.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"server": [
+		"ServerLoginDisconnectMixin"
+	],
+	"injectors": {
+		"defaultRequire": 0
+	}
+}
